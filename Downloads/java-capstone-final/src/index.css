@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spire-dark: #0f172a;
+  --color-spire-darker: #020617;
+  --color-spire-accent: #3b82f6;
+  --color-spire-glow: #60a5fa;
+  --color-spire-card-bg: #1e293b;
+  --color-spire-border: #334155;
+  
+  --color-spire-health: #ef4444;
+  --color-spire-energy: #eab308;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Cinzel', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased select-none;
+    margin: 0;
+    padding: 0;
+    /* touch-action and overflow are handled on a per-page basis */
+  }
+
+  /* Custom scrollbar for future use */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-bold text-white shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all;
+    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+  }
+  
+  .btn-primary:active {
+    @apply scale-90 shadow-[0_0_5px_rgba(59,130,246,0.5)];
+  }
+
+  .premium-text {
+    @apply bg-gradient-to-br from-slate-100 to-slate-400 bg-clip-text text-transparent;
+  }
+}
