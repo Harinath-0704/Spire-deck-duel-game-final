@@ -142,17 +142,16 @@ The project is deployed and available online:
 
 ## 📸 Screenshots
 
-### Game Interface
+## 🎮 Game Screenshots
 
-_Add a screenshot of the main game screen here._
+### Battle Arena
+[image]
 
-### Gameplay
+### Deck Builder
+[image]
 
-_Add a screenshot showing an active game here._
-
-### Card Interface
-
-_Add a screenshot showing the cards/game mechanics here._
+### Mobile Experience
+[image]
 
 ---
 
